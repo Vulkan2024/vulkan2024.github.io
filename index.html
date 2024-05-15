@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulkan</title>
+    <link rel="stylesheet" href="Styles/StylePinci.css">
+    <link rel="icon" href="Styles/Imagenes/1715556825617.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body class="loading">
+    <header>
+        <img class="titulo" src="Styles/Imagenes/1000063706.webp" alt="webp"> 
+        <h1 class="lema">"The race is on, the volcano awakes"</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a> <img style="margin-inline-start: 0px; height: 25px; width: 24;" src="Styles/Imagenes/home.svg" alt="svg"></li>
+            <li><a href="AboutUs.html">About us</a> <img style="margin-inline-start: 5px; height: 25px; width: 24;" src="Styles/Imagenes/people.svg" alt="svg"> </li>
+            <li><a href="Contact.html">Contact</a> <img style="margin-inline-start: 5px; height: 24px; width: 24;"  src="Styles/Imagenes/redes.svg" alt="svg"> </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section> 
+            <h2>F1 in Schools</h2>
+            <p>F1 in Schools is a global STEM (Science, Technology, Engineering and Mathematics) focused event aimed at middle and high school students. In this exciting competition, teams of 3 to 6 students embark on the challenge of creating a miniature car using the official F1 model block, and applying Computer Aided Design (CAD) and Computer Aided Manufacturing (CAM) tools.</p>
+        </section>
+
+        <section class="imagenF">
+          <img class="imageF" src="Styles/Imagenes/F1inschools-new-logo.webp" alt="webp">
+            <div class="misionvision">
+              <h2>Mission</h2>
+              <p>Learning and fostering STEAM science and passion for motorsports...</p>
+              <h2>Vision</h2>
+              <p>...Through the development and formation of a team and participation in F1 racing, a schools.</p>
+            </div>
+            </section>
+    </main>
+    <footer>
+        <p> &copy;Vulkan Team 2024</p>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.remove('loading');
+        });
+      </script>
+      
+      <script>
+        $(window).scroll(function() {
+          $('#image').each(function(){
+          var imagePos = $(this).offset().top;
+      
+          var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+-100) {
+              $(this).addClass("slideExpandUp");
+            }
+          });
+        });
+      </script>
+</body>
+</html>
